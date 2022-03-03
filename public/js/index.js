@@ -83,12 +83,14 @@ const uploadFile = () => {
     }
     xhr.upload.onprogress = updateProgress;
 
-    xhr.upload.onerror = () => {
+    xhr.upload.onerror = (err) => {
         resetFileInput();
-        showToast(`Error in upload: ${xhr.statusText}`);
+        showToast(`Error in upload ${xhr.statusText}`);
+
     }
     xhr.open("POST", uploadURL);
     xhr.send(formData);
+    return;
 
 }
 
