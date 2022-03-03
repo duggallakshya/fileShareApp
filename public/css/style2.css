@@ -217,10 +217,15 @@ p{
     margin-top: 15px;
     background: var(--main-bg-color);
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     color: #607d8b;
     cursor: pointer;
     
+}
+
+.email-container button:hover{
+    color: #fff;
+    background-color: #03a9f4;
 }
 
 .toast{
@@ -239,7 +244,7 @@ p{
 }
 
 .upload-img{
-    background: url("./bgimg.svg") no-repeat center ;
+    background: url("../img/bgimg.svg") no-repeat center ;
     background-size: contain;
     height: 50vh;
     width: 50vh;
