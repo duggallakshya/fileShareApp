@@ -230,7 +230,7 @@ p{
 
 .toast{
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 50%;
     transform: translate(-50%, 60px);
     padding: 10px 20px;
@@ -251,6 +251,10 @@ p{
 }
 
 @media screen and (max-width: 900px){
+    html, body {
+        position:relative;
+        overflow-x:hidden;
+      }
     :root{
         --container-width: 320px;
     }
